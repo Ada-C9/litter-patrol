@@ -17,4 +17,9 @@ class Trash extends Component {
   }
 }
 
+Trash.propTypes = {
+  isVisible: PropTypes.bool.isRequired,
+  onClickHandler: PropTypes.func.isRequired,
+};
+
 export default Trash;
