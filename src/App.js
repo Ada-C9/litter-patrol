@@ -37,7 +37,9 @@ class App extends Component {
   }
 
   onTrashClicked = () => {
-    // Fill this in!
+    this.setState({
+      points: this.state.points + 3
+    });
   }
 
   render() {
