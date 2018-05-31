@@ -9,7 +9,7 @@ class Trash extends Component {
     // the && boolean is like a tertinary but with just the true option no else. //use  condition && code to execute (doesnt have to evaluate to true for it to execute only the condition before it on the && it executes b/c of JS magic that execudes html as it evaluates it for boolean condition (&&))
     return (
       <div className="bin">
-      {this.props.showTrash && <img src={TrashIcon} alt="Trash" className="trash"></img>}
+      {this.props.showTrash && <img src={TrashIcon} alt="Trash" className="trash" onClick={this.props.onTrashClicked}></img>}
       </div>
     );
   }

@@ -49,6 +49,8 @@ class App extends Component {
         <Trash key={`trash-${index}`}
         // this prop is defined by the showTrash key here and accessed in the Trash component via this.props.showTrash
           showTrash={bin.isTrashVisible}
+          // passing a function onTrashClicked method in props with the key onTrash Clicked that can be called in Trash.js component
+          onTrashClicked={this.onTrashClicked}
         />
       );
     });
